@@ -17,7 +17,6 @@ export class RecipesComponent implements OnInit {
   ngOnInit() {
     this.recipeService.onRecipeSelected.subscribe(
       (recipe: Recipe) => {
-        console.log('Recipe selected:' + recipe);
         this.selectedRecipe=recipe;
       }
     );

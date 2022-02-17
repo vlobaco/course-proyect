@@ -17,7 +17,6 @@ export class RecipeItemComponent implements OnInit {
   }
 
   onSelected() {
-    this.recipeService.selectedRecipe=this.recipe;
     this.recipeService.onRecipeSelected.emit(this.recipe);
   }
 
